@@ -8,6 +8,12 @@ import { UncommonPageComponent } from './pages/uncommon-page/uncommon-page.compo
 import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 
 
+//configuracion del locale en la app
+
+import  localeEsCL  from '@angular/common/locales/es-CL';
+import {registerLocaleData} from '@angular/common';
+
+registerLocaleData(localeEsCL);
 @NgModule({
   declarations: [
     BasicsPagesComponent,

@@ -29,8 +29,9 @@
       </ol>
       <hr />
       <ol>
-        <li>fecha |date:'logn': 'GMT-6</li>
-        <li>fecha |date:'logn': 'GMT-4</li>
+        <li>fecha |date:'long': 'GMT-6</li>
+        <li>fecha |date:'long': 'GMT-4</li>
+        <li>fecha |date:'long':'': 'es-CL</li>
       </ol>
     </p-card>
   </div>
@@ -47,8 +48,9 @@
       </ol>
       <hr />
       <ol>
-        <li>{{ customDate }} |date:'logn': 'GMT-6</li>
-        <li>{{ customDate }} |date:'logn': 'GMT-4</li>
+        <li>{{ customDate }} |date:'long': 'GMT-6</li>
+        <li>{{ customDate }} |date:'long': 'GMT-4</li>
+        <li>{{ customDate | date : "long" : "" : "es-CL" }}</li>
       </ol>
     </p-card>
   </div>
