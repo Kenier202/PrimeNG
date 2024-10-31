@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class NumbersPageComponent {
 
+  public totalSells : number = 2314352.123123;
+  public percent : number =  0.2324;
 }
