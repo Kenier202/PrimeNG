@@ -1,1 +1,37 @@
-<p>uncommon-page works!</p>
+<p-panel header="pipes basicos" class="p-1">
+  <p>Pipes incluidos en angular - usualmente en el common module</p>
+</p-panel>
+
+<div class="grid">
+  <div class="col-12 md:col-6">
+    <p-fieldset legend="i18nSelect pipe" [toggleable]="true">
+      <p>
+        saludos {{ name }} es un placer
+        {{ gender | i18nSelect : invitationMap }} a nuestro evento
+      </p>
+      <p-button (onClick)="changeclient()" label="cambiar persona"> </p-button>
+    </p-fieldset>
+  </div>
+
+  <div class="col-12 md:col-6">
+    <p-fieldset legend="i18nPlural pipe" [toggleable]="true">
+      <p>actualmente {{ clients.length | i18nPlural : clientsMap }}</p>
+      <p-button (onClick)="deleteClient()" label="borrar cliente"> </p-button>
+    </p-fieldset>
+  </div>
+
+  <div class="col-12 md:col-6">
+    <p-fieldset legend="slice pipe" [toggleable]="true"> </p-fieldset>
+  </div>
+  <div class="col-12 md:col-6">
+    <p-fieldset legend="json pipe" [toggleable]="true"></p-fieldset>
+  </div>
+
+  <div class="col-12 md:col-6">
+    <p-fieldset legend="keyValue pipe" [toggleable]="true"></p-fieldset>
+  </div>
+
+  <div class="col-12 md:col-6">
+    <p-fieldset legend="async pipe" [toggleable]="true"></p-fieldset>
+  </div>
+</div>
